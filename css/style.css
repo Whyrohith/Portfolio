@@ -107,7 +107,7 @@ a {
     background-color: #173B45;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -116,12 +116,18 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
+} */
+
+
+#works {
+    width: auto;
 }
 
 p {
     float: left;
     padding-right: 10px;
 }
+
 
 .projects {
     display: grid;
@@ -249,4 +255,52 @@ p {
 
 .footer>p {
     color: #F8EDED;
+}
+
+@media screen and (max-width: 600px),
+screen and (max-height: 500px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* Stacks elements in a single column */
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #173B45;
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* Ensure some spacing */
+    }
+
+    .nav>ul {
+        flex-direction: column;
+        /* Stack navigation links vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    .nav>ul>li {
+        margin: 5px 0;
+        /* Adjust margins for list items */
+    }
+
+    .about-image {
+        flex-direction: column;
+        /* Stack image and text vertically */
+    }
+
+    .contact-me {
+        flex-direction: column;
+        /* Stack contact items vertically */
+        align-items: center;
+        /* Center align for better appearance */
+    }
 }
