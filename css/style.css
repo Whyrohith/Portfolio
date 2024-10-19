@@ -208,13 +208,13 @@ p {
 }
 
 .education-details>p {
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .uniimg {
-    padding: 20px;
     margin-right: 10px;
 }
 
