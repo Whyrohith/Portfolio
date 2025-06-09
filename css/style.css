@@ -303,4 +303,11 @@ screen and (max-height: 500px) {
         align-items: center;
         /* Center align for better appearance */
     }
+
+    .contact-me>button {
+        width: 100%;
+        /* Make button full width for better usability */
+        text-align: center;
+        /* Center text in the button */
+    }
 }
